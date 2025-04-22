@@ -27,9 +27,25 @@ public class Persona {
      * 
      * @return Representación en String de la persona, mostrando su nombre y edad.
      */
+
+
+
+    public String getNombre() {
+        return nombre; // Devuelve el nombre de la persona
+    }
+    public int getEdad() {
+        return edad; // Devuelve la edad de la persona
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre; // Asigna el nuevo nombre al atributo nombre de la clase
+    }
+    public void setEdad(int edad) {
+        this.edad = edad; // Asigna la nueva edad al atributo edad de la clase
+    }
+
     @Override
     public String toString() {
-        return nombre + " - " + edad; // Devuelve el nombre y la edad de la persona en formato String
+        return "Nombre: "+nombre + " Edad: " + edad; // Devuelve el nombre y la edad de la persona en formato String
     }
 
     // TODO: Agregar getters y setters para los atributos de la clase
